@@ -1,7 +1,6 @@
 from flask import Flask
 from api.extensions import Api
-from api.entity import EntityView
-
+from api.parse_http_data import ParseHTTPDataView
 
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
@@ -11,6 +10,6 @@ def create_app():
     api = Api(app)
 
     # endpoints (resources)
-    api.add_resource(EntityView, '/')
+    api.add_resource(ParseHTTPDataView, '/')
 
     return app
