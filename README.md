@@ -11,4 +11,10 @@ This is a generic setup for a flask application API
 ```
 pip3 install -r requirements.txt
 ```
+3. Run via ``` ./serve.sh ```
+4. Test via 
+``` 
+cd tests
+pytest
 
+```
